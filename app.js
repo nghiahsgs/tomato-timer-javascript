@@ -1,3 +1,17 @@
+function adjustVolumeDown(){
+    document.querySelector('#audioWork').volume=parseFloat(document.querySelector('#audioWork').volume)-0.1;
+    document.querySelector('#audioRelax').volume=parseFloat(document.querySelector('#audioWork').volume)-0.1;
+    document.querySelector('#audioEndtime').volume=parseFloat(document.querySelector('#audioWork').volume)-0.1;
+    $('.volume').text(document.querySelector('#audioEndtime').volume)
+    
+
+}
+function adjustVolumeUp(){
+    document.querySelector('#audioWork').volume=parseFloat(document.querySelector('#audioWork').volume)+0.1;
+    document.querySelector('#audioRelax').volume=parseFloat(document.querySelector('#audioWork').volume)+0.1;
+    document.querySelector('#audioEndtime').volume=parseFloat(document.querySelector('#audioWork').volume)+0.1;
+    $('.volume').text(document.querySelector('#audioEndtime').volume)
+}
 function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
     var seconds = Math.floor((t / 1000) % 60);
