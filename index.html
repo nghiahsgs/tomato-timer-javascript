@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,20 +32,26 @@
     <button type="button" onclick="startWork()" style="margin: 10px;" class="btn btn-success">WORK</button>
     <br>
     <button type="button" onclick="startRelax()" style="margin: 5px;" class="btn btn-info">RELAX</button>
+    <br>
+    <br>
+    <h5>Volume</h5>
+    <button type="button" onclick="adjustVolumeDown()" style="margin: 5px;" class="btn btn-light">-</button>
+    <button type="button" style="margin: 5px;" class="btn btn-light volume">1.0</button>
+    <button type="button" onclick="adjustVolumeUp()" style="margin: 5px;" class="btn btn-light">+</button>
 
 
 
         <!-- <button onclick="countdown()">click</button> -->
     
-    <audio controls autoplay id="audioWork" style="display: none;">
+    <audio controls  id="audioWork" style="display: none;">
         <source src="tomatoTimer.mp3" type="audio/mpeg">
     </audio>
 
-    <audio controls autoplay id="audioRelax" style="display: none;">
+    <audio controls  id="audioRelax" style="display: none;">
         <source src="tomatoTimer2.mp3" type="audio/mpeg">
     </audio>
 
-    <audio controls autoplay id="audioEndtime" style="display: none;">
+    <audio controls  id="audioEndtime" style="display: none;">
         <source src="tomatoTimer3.mp3" type="audio/mpeg">
     </audio>
 </body>
